@@ -114,26 +114,33 @@ def hecele(word):
 #2 dört - CVCC
     elif sayi == 4 and count_vowel(word) == 1:
         return word
-#3 kedi - CVCV
+#3  trio - CCVV
+    elif sayi == 4 and count_vowel(word) == 2 and chars[0] in consonant and chars[1] in consonant and chars[2] in vowel and chars[3] in vowel:
+        word = "".join(char_list(word[0:3])) + "-" + "".join(char_list(word[3]))
+        return word
+#4 kedi - CVCV
     elif sayi == 4 and count_vowel(word) == 2 and chars[0] in consonant:
         word = "".join(char_list(word[0:2])) + "-" + "".join(char_list(word[2:]))
         return word
-#4 ilik - VCVC
+#5 ilik - VCVC
     elif sayi == 4 and count_vowel(word) == 2 and chars[0] in vowel:
         word = "".join(char_list(word[0:1])) + "-" + "".join(char_list(word[1:]))
         return word
-#5 obua - VCVV
+#6 obua - VCVV
     elif sayi == 4 and count_vowel(word) == 3 and chars[-2] in vowel and chars[-1] in vowel:
         word = "".join(char_list(word[0])) + "-" + "".join(char_list(word[1:3])) + "-" + "".join(char_list(word[3]))
         return word
-#6 aile - VVCV
+#7 aile - VVCV
     elif sayi == 4 and count_vowel(word) == 3 and chars[0] in vowel:
         word = "".join(char_list(word[0])) + "-" + "".join(char_list(word[1])) + "-" + "".join(char_list(word[2:4]))
         return word
-#7 tren - CCVC
+#8 tren - CCVC
     elif sayi == 4 and count_vowel(word) == 1:
         return word
-
+#9 aort - VVCC
+    elif sayi == 4 and count_vowel(word) == 2 and chars[0] in vowel and chars[1] in vowel and chars[2] in consonant and chars[3] in consonant:
+        word = "".join(char_list(word[0])) + "-" + "".join(char_list(word[1:3]))
+        return word
 ################# 5 ###################
 # required rule: 18 #
 #1 prens - CCVCC
@@ -1727,5 +1734,5 @@ def hecele(word):
 # 10 ==> 125
 # 11 ==> 173
 
-#Sub_Total = 1 + 2 + 5 + 6 + 18 +29 +46 +62 + 97+ 125
+#Sub_Total = 1 + 2 + 5 + 6 + 18 + 29 + 46 + 62 + 97 + 125 + 173
 #print ("# of Rules: ", Sub_Total)
