@@ -646,7 +646,10 @@ def hecele(word):
     elif sayi == 8 and annotate(word) == "CVCCVCCC":
         word = "".join(char_list(word[0:3])) + "-" + "".join(char_list(word[3:8]))
         return word
-
+#63 amiriita - VCVCVVCV
+    elif sayi == 8 and annotate(word) == "VCVCVVCV":
+        word = "".join(char_list(word[0])) + "-" + "".join(char_list(word[1:4])) + "-" + "".join(char_list(word[5])) + "-" + "".join(char_list(word[5])) + "-" + "".join(char_list(word[6:8]))
+        return word
 ################# 9 ###################
 # required rule: 97 #
     elif sayi == 9 and word[-4:] == "spor" and annotate(word) == "CVCCVCCVC":
@@ -1223,6 +1226,11 @@ def hecele(word):
     elif sayi == 10 and annotate(word) == "VCVCVVCCVV":
         word = "".join(char_list(word[0:1])) + "-" + "".join(char_list(word[1:3])) + "-" + "".join(char_list(word[3:5])) + "-" + "".join(char_list(word[5:7])) + "-" + "".join(char_list(word[7:9])) + "-" + "".join(char_list(word[9:10]))
         return word
+# 126
+# teoricilik - CVVCVCVCVC
+    elif sayi == 10 and annotate(word) == "CVVCVCVCVC":
+        word = "".join(char_list(word[0:2])) + "-" + "".join(char_list(word[2])) + "-" + "".join(char_list(word[3:5])) + "-" + "".join(char_list(word[5:7])) + "-" + "".join(char_list(word[7:10]))
+        return word
 
 
 ################# 11 ###################
@@ -1714,8 +1722,64 @@ def hecele(word):
         word = "".join(char_list(word[0:2])) + "-" + "".join(char_list(word[2:4])) + "-" + "".join(char_list(word[4:6])) + "-" + "".join(char_list(word[6:8])) + "-" + "".join(char_list(word[8:11]))
         return word
 
+# 174
+# entelektüel
+    elif sayi == 11 and annotate(word) == "VCCVCVCCVVC":
+        word = "".join(char_list(word[0:2])) + "-" + "".join(char_list(word[2:4])) + "-" + "".join(char_list(word[4:7])) + "-" + "".join(char_list(word[7:9])) + "-" + "".join(char_list(word[9:11]))
+        return word
 
+# 174
+# iadeiitibar
+    elif sayi == 11 and annotate(word) == "VVCVVVCVCVC":
+        word = "".join(char_list(word[0])) + "-" + "".join(char_list(word[1])) + "-" + "".join(char_list(word[2:4])) + "-" + "".join(char_list(word[5])) + "-" + "".join(char_list(word[5])) + "-" + "".join(char_list(word[6:8])) + "-" + "".join(char_list(word[8:11]))
+        return word
 
+# 175
+# maatteessüf
+    elif sayi == 11 and annotate(word) == "CVVCCVVCCVC":
+        word = "".join(char_list(word[0:2])) + "-" + "".join(char_list(word[2:4])) + "-" + "".join(char_list(word[4:6])) + "-" + "".join(char_list(word[6:8])) + "-" + "".join(char_list(word[8:11]))
+        return word
+
+# 176
+# aynştaynyum
+    elif sayi == 11 and annotate(word) == "VCCCCVCCCVC":
+        word = "".join(char_list(word[0:4])) + "-" + "".join(char_list(word[4:8])) + "-" + "".join(char_list(word[8:11]))
+        return word
+
+# 176
+# ahlatıerbaa
+    elif sayi == 11 and annotate(word) == "VCCVCVVCCVV":
+        word = "".join(char_list(word[0:2])) + "-" + "".join(char_list(word[2:5])) + "-" + "".join(char_list(word[5])) + "-" + "".join(char_list(word[6:8])) + "-" + "".join(char_list(word[8:10])) + "-" + "".join(char_list(word[10]))
+        return word
+
+# 176
+# antropozoik
+    elif sayi == 11 and annotate(word) == "VCCCVCVCVVC":
+        word = "".join(char_list(word[0:3])) + "-" + "".join(char_list(word[3:5])) + "-" + "".join(char_list(word[5:7])) + "-" + "".join(char_list(word[7:9])) + "-" + "".join(char_list(word[9:11]))
+        return word
+
+# 176
+# spontaneizm
+    elif sayi == 11 and annotate(word) == "CCVCCVCVVCC":
+        word = "".join(char_list(word[0:4])) + "-" + "".join(char_list(word[4:6])) + "-" + "".join(char_list(word[6:8])) + "-" + "".join(char_list(word[8:11]))
+        return word
+
+# 177
+# postrestant
+    elif sayi == 11 and annotate(word) == "CVCCCVCCVCC":
+        word = "".join(char_list(word[0:4])) + "-" + "".join(char_list(word[4:7])) + "-" + "".join(char_list(word[7:11]))
+        return word
+# 178
+# tahteşşuuru
+    elif sayi == 11 and annotate(word) == "CVCCVCCVVCV":
+        word = "".join(char_list(word[0:3])) + "-" + "".join(char_list(word[3:6])) + "-" + "".join(char_list(word[6:8])) + "-" + "".join(char_list(word[8])) + "-" + "".join(char_list(word[9:11]))
+        return word
+
+# 179
+# devrisaadet
+    elif sayi == 11 and annotate(word) == "CVCCVCVVCVC":
+        word = "".join(char_list(word[0:3])) + "-" + "".join(char_list(word[3:5])) + "-" + "".join(char_list(word[5:7])) + "-" + "".join(char_list(word[7])) + "-" + "".join(char_list(word[8:11]))
+        return word
 #####################################################################
 # Return output
 #for word in words:
